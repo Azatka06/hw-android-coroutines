@@ -7,7 +7,7 @@ import io.ktor.http.ContentType
 
 object Api {
     const val url =
-        "https://raw.githubusercontent.com/Azatka06/NCMserver/master/posts.json  https://raw.githubusercontent.com/Azatka06/Coroutines/origin/DataInJSON/listPosts.json"
+        "https://raw.githubusercontent.com/Azatka06/hw-android-coroutines/main/DataInJSON/listPosts.json?token=ANT3VGUNBSRP3JKLLISA7MTAP3BF2"
     val client = HttpClient {
         install(JsonFeature) {
             acceptContentTypes = listOf(
