@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPromoPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutCardPromoPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconPromoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:background="@drawable/ic_baseline_fingerprint_24" />
+
+            <TextView
+                android:id="@+id/datePromoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#999999"
+                android:textSize="10sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iconPromoPost"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="22.22.2222" />
+
+            <TextView
+                android:id="@+id/authorPromoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iconPromoPost"
+                app:layout_constraintTop_toBottomOf="@+id/datePromoPost"
+                tools:text="Author Text" />
+
+            <ImageButton
+                android:id="@+id/linkPromoPost"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/promo_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconPromoPost" />
+
+
+            <TextView
+                android:id="@+id/textPromoPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linkPromoPost"
+                tools:text="Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! Some Text! " />
+
+
+            <Button
+                android:id="@+id/btnLikePromoPost"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_favorite_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnCommentPromoPost"
+                app:layout_constraintTop_toBottomOf="@id/textPromoPost" />
+
+            <TextView
+                android:id="@+id/forBtnLikePromoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnLikePromoPost"
+                app:layout_constraintTop_toBottomOf="@+id/textPromoPost"
+                tools:text="10" />
+
+            <Button
+                android:id="@+id/btnCommentPromoPost"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_mode_comment_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnSharePromoPost"
+                app:layout_constraintTop_toBottomOf="@+id/textPromoPost" />
+
+            <TextView
+                android:id="@+id/forBtnCommentPromoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnCommentPromoPost"
+                app:layout_constraintTop_toBottomOf="@+id/textPromoPost"
+                tools:text="10" />
+
+
+            <Button
+                android:id="@+id/btnSharePromoPost"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_share_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPromoPost" />
+
+            <TextView
+                android:id="@+id/forBtnSharePromoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnSharePromoPost"
+                app:layout_constraintTop_toBottomOf="@+id/textPromoPost"
+                tools:text="10" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
